@@ -9,12 +9,12 @@ let linkArr = [
 "https://api.watchmode.com/v1/title/1159474/sources/?apiKey=",
 "https://api.watchmode.com/v1/title/1159475/sources/?apiKey="
 ];
+let modal = document.getElementsByClassName("modal");
 
+function fetchFilm(filmNum) {
+    let potterFilm = linkArr[filmNum]+myApiKey;
 
-function createApi(query) {
-    let searchQuery = linkArr[0]+myApiKey
-
-    fetch(searchQuery)
+    fetch(potterFilm)
     .then(function (response) {
       if (!response.ok) {
         throw response.json();
@@ -26,8 +26,6 @@ function createApi(query) {
     }
      )
 
-    
-
 }
 
-createApi("harry potter");
+fetchFilm(0);
