@@ -12,10 +12,12 @@ let linkArr = [
 let modal = document.getElementsByClassName("modal");
 
 localStorage.setItem("linkArr", JSON.stringify(linkArr));
+
 let streamOptions = [];
 
-document
-  .getElementById("filmList")
+
+
+document.getElementById("filmList")
   .addEventListener("change", function (event) {
     var userSelection = document.querySelector(
       `[data-movie="${event.target.selectedIndex}"]`
@@ -34,16 +36,20 @@ function fetchFilm(filmNum) {
       if (!response.ok) {
         throw response.json();
       }
-
+       
       return response.json();
+      
+      
     })
     .then(function (data) {
-      for (var i = 0; i < data.length; i++) {
-        for (var j = 0; j < streamOptions.length; j++) {
-          if (data.name[i]) {
-          }
-        }
-      }
-      console.log(data);
+       
+      console.log(data); 
+      const streamingServices = data.map(title => title.name);
+      console.log(new Set(streamingServices));
+      
+    
+      
     });
 }
+
+
