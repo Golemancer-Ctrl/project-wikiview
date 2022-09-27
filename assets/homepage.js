@@ -29,3 +29,43 @@ function fetchFilm(filmNum) {
 }
 
 fetchFilm(0);
+
+var hpCharachter = [ "Harry Potter", "Hermione Granger","Ronald Weasly", "Albus Dumbledore", "Draco Malfoy"]
+
+
+//const searchContainer = document.getElementsByClassName("container");
+//const searchBar = document.getElementById("searchBar");
+
+//searchBar.onkeyup = (e)=> {
+  //let searchString = e.target.value;
+  //let emptyArray = [];
+
+  //if(searchString){
+   // emptyArray = hpCharachter.filter((data)=>{
+    //  return data.toLocaleLowerCase().startsWith(searchString.toLocaleLowerCase());
+      
+   // });
+    
+    //emptyArray = emptyArray.map((data)=>{
+     // return data = '<li>' + data + '</li>';
+
+    //});
+
+    //console.log(emptyArray)
+   // searchContainer.classList.add("active")
+
+ //}else{
+
+  //}
+  //showCharacters(emptyArray);
+//}
+
+//function showCharacters(list){
+ // let listData;
+  //if(!list.length){
+
+ // }else{
+ //   listData = list.join('');
+ // }
+//  suggBox.innerHTML = listData;
+//}
