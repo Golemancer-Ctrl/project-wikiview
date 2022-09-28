@@ -30,21 +30,28 @@
 
     <!-- add movie dropdown here -->
     <select id="filmList">
-        <option class="film" data-movie="0">Harry Potter and the Sorcerer's Stone</option>
-        <option class="film" data-movie="1">Harry Potter and the Chamber of Secrets</option>
-        <option class="film" data-movie="2">Harry Potter and the Prisoner of Azkaban</option>
-        <option class="film" data-movie="3">Harry Potter and the Goblet of Fire</option>
-        <option class="film" data-movie="4">Harry Potter and the Order of the Phoenix</option>
-        <option class="film" data-movie="5">Harry Potter and the Half-Blood Prince</option>
-        <option class="film" data-movie="6">Harry Potter and the Deathly Hallows Part 1</option>
-        <option class="film" data-movie="7">Harry Potter and the Deathly Hallows Part 2</option>
+        <option class="film js-modal-trigger" data-movie="0" data-target="modal-film-display">Harry Potter and the Sorcerer's Stone</option>
+        <option class="film js-modal-trigger" data-movie="1" data-target="modal-film-display">Harry Potter and the Chamber of Secrets</option>
+        <option class="film js-modal-trigger" data-movie="2" data-target="modal-film-display">Harry Potter and the Prisoner of Azkaban</option>
+        <option class="film js-modal-trigger" data-movie="3" data-target="modal-film-display">Harry Potter and the Goblet of Fire</option>
+        <option class="film js-modal-trigger" data-movie="4" data-target="modal-film-display">Harry Potter and the Order of the Phoenix</option>
+        <option class="film js-modal-trigger" data-movie="5" data-target="modal-film-display">Harry Potter and the Half-Blood Prince</option>
+        <option class="film js-modal-trigger" data-movie="6" data-target="modal-film-display">Harry Potter and the Deathly Hallows Part 1</option>
+        <option class="film js-modal-trigger" data-movie="7" data-target="modal-film-display">Harry Potter and the Deathly Hallows Part 2</option>
     </select>
 
-    <div class="modal">
-        <ul id="filmDisplay">
-           
-        </ul>
-    </div>
+    <div id="modal-film-display" class="modal">
+        <div class="modal-background"></div>
+      
+        <div class="modal-content">
+          <div class="box">
+            <p id="filmDisplay"></p>
+            <!-- Your content -->
+          </div>
+        </div>
+      
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
     
     <script src="./assets/homepage.js"></script>
 </body>

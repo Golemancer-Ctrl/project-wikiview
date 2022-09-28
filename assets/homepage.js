@@ -9,7 +9,10 @@ let linkArr = [                             // array of APIs for streaming avail
   "https://api.watchmode.com/v1/title/1159474/sources/?apiKey=",
   "https://api.watchmode.com/v1/title/1159475/sources/?apiKey=",
 ];
-let modal = document.getElementsByClassName("modal");
+let filmDisplay = document.getElementById("filmDisplay");
+let modal = document.getElementById("modal-film-display");
+let modalTrigger = document.getElementsByClassName("js-modal-trigger");
+let modalClose = document.getElementsByClassName("modal-close")[0];
 
 localStorage.setItem("linkArr", JSON.stringify(linkArr));
 
@@ -49,6 +52,22 @@ function fetchFilm(filmNum) {                // fetching film streaming data fro
         text += x + "<br>";
       }
 
-      document.getElementById("filmDisplay").innerHTML = text;
+      filmDisplay.innerHTML = text;
     });
+}
+
+
+filmList.onchange = function() {
+  modal.classList.add('is-active');
+  modal.style.display = 'block';
+}
+
+
+modalClose.onclick = function() {
+  // modal.classList.remove('is-active');
+  modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+console.log(event);
 }
