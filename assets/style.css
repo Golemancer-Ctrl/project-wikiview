@@ -52,3 +52,10 @@
     cursor: pointer;
 
 }
+
+html {
+    background: url('./images/hg-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}   

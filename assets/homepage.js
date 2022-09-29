@@ -69,3 +69,4 @@ var hpCharachter = [ "Harry Potter", "Hermione Granger","Ronald Weasly", "Albus 
  // }
 //  suggBox.innerHTML = listData;
 //}
+

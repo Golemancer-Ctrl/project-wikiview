@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Homepage</title>
 </head>
 <body>
-    
+    <audio controls autoplay>
+        <source src="https://www.televisiontunes.com/uploads/audio/Harry%20Potter%20-%20Main%20Theme.mp3" type="audio/mp3" alt="Harry Potter Main Theme">
+    </audio>
     <div class="container">
         <form action="" class="search-bar">
-            <input id = "searchBar" type="text" placeholder="search anything" name="q">
+            <input type="text" placeholder="search anything" name="q">
             <button type="submit"><img src="./assets/images/search.png"></button>
-
         </form>
     </div>
     
     <!-- add character dropdown here -->
+    <select onchange="location = this.options[this.selectedIndex].value;" id="charList">
+        <option value="characterpage.html?name=Cedric" class="char">Cedric Diggory</option>
+        <option value="characterpage.html?name=Draco" class="char">Draco Malfoy</option>
+        <option value="characterpage.html?name=Luna" class="char">Luna Lovegood</option>
+        <option value="characterpage.html?name=Harry" class="char">Harry Potter</option>/
+    </select>
 
     <!-- add movie dropdown here -->
     <select id="filmList">
@@ -33,10 +42,7 @@
 
     <div class="modal">
         <ul id="filmDisplay">
-            <li>Amazon</li>
-            <li>DirecTV</li>
-            <li>Spectrum</li>
-            <li>Peacock</li>
+           
         </ul>
     </div>
     
