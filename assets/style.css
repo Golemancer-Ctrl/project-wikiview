@@ -59,3 +59,12 @@ html {
     background-size: cover;
 
 }   
+
+@media screen and (max-width: 480px) {
+    html {
+      background: url('./images/hg-mobile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+  }
