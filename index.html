@@ -9,18 +9,27 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>Homepage</title>
 </head>
+
 <body>
+    <h1 class="container title is-1 is-spaced"> PotterWiki </h1>
+    <h2 class="container subtitle is-2"> A Wikipedia for Harry Potter Nerds </h2>
+
     <audio controls autoplay>
         <source src="https://www.televisiontunes.com/uploads/audio/Harry%20Potter%20-%20Main%20Theme.mp3" type="audio/mp3" alt="Harry Potter Main Theme">
     </audio>
-   
-  <header class="my-header">
+    <div class="container search-container">
+        <form action="" class="container search-bar">
+            <input type="text" placeholder="search anything" name="q">
+            <button type="submit"><img src="./assets/images/search.png"></button>
+        </form>
+    </div>
+    
     <!-- add character dropdown here -->
-    <select id="charList">
-        <option class="char">Cedric Diggory</option>
-        <option class="char">Draco Malfoy</option>
-        <option class="char">Luna Lovegood</option>
-        <option class="char">Harry Potter</option>/
+    <select onchange="location = this.options[this.selectedIndex].value;" id="charList">
+        <option value="characterpage.html?name=Cedric" class="char">Cedric Diggory</option>
+        <option value="characterpage.html?name=Draco" class="char">Draco Malfoy</option>
+        <option value="characterpage.html?name=Luna" class="char">Luna Lovegood</option>
+        <option value="characterpage.html?name=Harry" class="char">Harry Potter</option>/
     </select>
 
     <!-- add movie dropdown here -->
@@ -44,7 +53,7 @@
         <div class="modal-content">
           <div class="box">
             <p id="filmDisplay"></p>
-            <!-- Your content -->
+            <!-- streaming availability displayed here -->
           </div>
         </div>
       
