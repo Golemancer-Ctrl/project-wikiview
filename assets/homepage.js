@@ -75,8 +75,8 @@ window.onclick = function(event) {
 const Select = document.getElementById("charList"); 
 Select.addEventListener("change",function() {
   location = this.options[this.selectedIndex].value;
-  localStorage.setItem("charName",this.options[this.selectedIndex].text); 
-  
+  localStorage.setItem("charIndex",this.options[this.selectedIndex].dataset.index); 
+  console.log(this.options[this.selectedIndex].value);
 }); 
 let val = localStorage.getItem("charName"); 
 if (val) Select.value===val; 
