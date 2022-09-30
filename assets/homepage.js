@@ -69,5 +69,8 @@ modalClose.onclick = function() {
 }
 
 window.onclick = function(event) {
-console.log(event);
+  console.log(event);
 }
+
+
+
