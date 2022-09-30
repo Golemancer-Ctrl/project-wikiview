@@ -72,5 +72,14 @@ window.onclick = function(event) {
   console.log(event);
 }
 
+const Select = document.getElementById("charList"); 
+Select.addEventListener("change",function() {
+  location = this.options[this.selectedIndex].value;
+  localStorage.setItem("charName",this.options[this.selectedIndex].text); 
+  
+}); 
+let val = localStorage.getItem("charName"); 
+if (val) Select.value===val; 
+
 
 
