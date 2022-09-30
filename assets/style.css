@@ -5,6 +5,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+p {
+    padding: 10px;
+}
+
 .container {
     width: 100%;
     display: flex;
