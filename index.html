@@ -30,18 +30,21 @@
     
     <!-- add character dropdown here -->
 <div id="containerdiv"> 
-    <select onchange="location = this.options[this.selectedIndex].value;" id="charList">
-        <option value="characterpage.html?name=Cedric" class="char">Cedric Diggory</option>
-        <option value="characterpage.html?name=Draco" class="char">Draco Malfoy</option>
-        <option value="characterpage.html?name=Luna" class="char">Luna Lovegood</option>
-        <option value="characterpage.html?name=Harry" class="char">Harry Potter</option>
+    <select id="charList">
+        <option selected disabled>Choose a character</option>
+        <option value="characterpage.html?name=Cedric" data-index="5" class="char">Cedric Diggory</option>
+        <option value="characterpage.html?name=Draco" data-index="3" class="char">Draco Malfoy</option>
+        <option value="characterpage.html?name=Luna" data-index="10" class="char">Luna Lovegood</option>
+        <option value="characterpage.html?name=Harry" data-index="0" class="char">Harry Potter</option>
+        <option value="characterpage.html?name=Severus" data-index="7" class="char">Severus Snape</option>
     </select>
 </div> 
     <!-- add movie dropdown here -->
     <div id="containerdiv">
     <select id="filmList">
+        <option selected disabled>Harry Potter streaming options, pick a movie</option>
         <option class="film js-modal-trigger" data-movie="0" data-target="modal-film-display">Harry Potter and the Sorcerer's Stone</option>
-       0 <option class="film js-modal-trigger" data-movie="1" data-target="modal-film-display">Harry Potter and the Chamber of Secrets</option>
+        <option class="film js-modal-trigger" data-movie="1" data-target="modal-film-display">Harry Potter and the Chamber of Secrets</option>
         <option class="film js-modal-trigger" data-movie="2" data-target="modal-film-display">Harry Potter and the Prisoner of Azkaban</option>
         <option class="film js-modal-trigger" data-movie="3" data-target="modal-film-display">Harry Potter and the Goblet of Fire</option>
         <option class="film js-modal-trigger" data-movie="4" data-target="modal-film-display">Harry Potter and the Order of the Phoenix</option>
@@ -57,10 +60,11 @@
         <div class="modal-background"></div>
       
         <div class="modal-content">
-          <div class="box">
+          
+            <h1 id="modalHeader">Streaming Now On:</h1>
             <p id="filmDisplay"></p>
             <!-- streaming availability displayed here -->
-          </div>
+          
         </div>
       
         <button class="modal-close is-large" aria-label="close"></button>

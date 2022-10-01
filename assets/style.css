@@ -5,6 +5,27 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#modalHeader {
+    text-align: center;
+    background-color: #800020;
+    color: goldenrod;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: xx-large;
+    border: solid black;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+#filmDisplay  {
+    text-align: center;
+    background-color: #800020;
+    color: goldenrod;
+    font-size: x-large;
+    border: solid black;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
 .container {
     width: 100%;
     display: flex;

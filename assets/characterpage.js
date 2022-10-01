@@ -1,5 +1,5 @@
 let charactersApi = "https://hp-api.herokuapp.com/api/characters";
-let selectedCharacter = localStorage.getItem();
+let selectedCharacterIndex = localStorage.getItem("charIndex");
 
 
 
@@ -12,11 +12,9 @@ function fetchApi() {
 
       return response.json();
     })
-    .then(function (data) {
-      console.log(data);
-      const characterData = data.map((title) => title.name);
+    .then(function (charData) {
+      console.log(charData[selectedCharacterIndex]);
     })
-    
 }
 
 fetchApi();
