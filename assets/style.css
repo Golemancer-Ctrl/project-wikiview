@@ -2,7 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#modalHeader {
+    text-align: center;
+    background-color: #800020;
+    color: goldenrod;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: xx-large;
+    border: solid black;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+#filmDisplay  {
+    text-align: center;
+    background-color: #800020;
+    color: goldenrod;
+    font-size: x-large;
+    border: solid black;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
 }
 
 .container {
@@ -13,7 +34,6 @@
 }
 
 #containerdiv{
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,9 +54,12 @@ audio{
     top: px;
     /* margin-bottom: 500px;
     margin-left: 200; */
-    border-color: rgb(170, 52, 176);
+    border-color: tomato;
     border-width: 1.3rem;
     border-radius: 30px;
+    font-family: fantasy;
+    font-size: x-large;
+    font-weight: 600
    
 
 }
@@ -45,9 +68,13 @@ audio{
     position: absolute;
     top: 60px;
     margin-top: 15.5rem;
-    border-color: rgb(170, 170, 234);
+    border-color: tomato;
     border-width: 1.3rem;
     border-radius: 30px;
+    font-family: fantasy;
+    font-size: x-large;
+    font-weight: 600;
+    
     
     
     
