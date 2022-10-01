@@ -13,10 +13,13 @@ function fetchApi() {
       return response.json();
     })
     .then(function (charData) {
-      console.log(charData[selectedCharacterIndex]);
+      localStorage.setItem("charObject", charData[selectedCharacterIndex]);
     })
 }
 
 fetchApi();
+
+let charInfo = localStorage.getItem("charObject");
+
 
 

@@ -19,7 +19,8 @@ localStorage.setItem("linkArr", JSON.stringify(linkArr));
 let streamOptions = [];
 console.log(streamOptions);
 
-document.getElementById("filmList")           // getting specific item clicked
+ // getting specific item clicked
+document.getElementById("filmList")          
   .addEventListener("change", function (event) {
     //  var userSelection = //may not need //
     document.querySelector(
@@ -31,9 +32,11 @@ document.getElementById("filmList")           // getting specific item clicked
     fetchFilm(event.target.selectedIndex);     // targeting selected film 
   });
 
-function fetchFilm(filmNum) {                // fetching film streaming data from APIs
-  let potterFilm = linkArr[filmNum] + myApiKey;    // linking film selection API URL to API key
+   // fetching film streaming data from APIs
+function fetchFilm(filmNum) {               
 
+   // linking film selection API URL to API key
+  let potterFilm = linkArr[filmNum] + myApiKey;   
   fetch(potterFilm)
     .then(function (response) {
       if (!response.ok) {
@@ -64,6 +67,7 @@ filmList.onchange = function() {
 
 
 modalClose.onclick = function() {
+  
   // modal.classList.remove('is-active');
   modal.style.display = 'none';
 }
