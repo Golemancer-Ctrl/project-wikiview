@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -13,7 +13,6 @@
 }
 
 #containerdiv{
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,9 +35,12 @@ audio{
     top: px;
     /* margin-bottom: 500px;
     margin-left: 200; */
-    border-color: rgb(170, 52, 176);
+    border-color: tomato;
     border-width: 1.3rem;
     border-radius: 30px;
+    font-family: fantasy;
+    font-size: x-large;
+    font-weight: 600
    
 
 }
@@ -47,9 +49,13 @@ audio{
     position: absolute;
     top: 60px;
     margin-top: 15.5rem;
-    border-color: rgb(170, 170, 234);
+    border-color: tomato;
     border-width: 1.3rem;
     border-radius: 30px;
+    font-family: fantasy;
+    font-size: x-large;
+    font-weight: 600;
+    
     
     
     
