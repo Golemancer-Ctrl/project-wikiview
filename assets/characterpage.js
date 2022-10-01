@@ -9,7 +9,6 @@ function fetchApi() {
       if (!response.ok) {
         throw response.json();
       }
-
       return response.json();
     })
     .then(function (charData) {
@@ -21,5 +20,5 @@ fetchApi();
 
 let charInfo = localStorage.getItem("charObject");
 
-
+console.log(charInfo);
 
