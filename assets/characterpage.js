@@ -11,7 +11,13 @@ let charQuotes = [
     "I can teach you how to bottle fame, brew glory, even stopper death… If you aren’t as big a bunch of dunderheads as I usually have to teach."
 ]
 
+
+
 console.log(selectedCharacterIndex);
+
+document.getElementById('return').addEventListener("click", function (clear) {
+  localStorage.clear()
+  });
 
 function fetchApi() {
     fetch(charactersApi)
@@ -60,3 +66,6 @@ if(selectedCharacterIndex === 5){
 
 document.querySelector("#house").innerText = charInfo.house;
 document.querySelector("#cite").innerText = "- " + charInfo.name;
+
+
+  
