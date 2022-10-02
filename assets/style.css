@@ -5,6 +5,14 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.title {
+    color: #800020;
+}
+
+.subtitle {
+    color: goldenrod;
+}
+
 #modalHeader {
     text-align: center;
     background-color: #800020;
@@ -51,11 +59,14 @@ audio{
 }
 
 #charList{
+    appearance: none;
     position: absolute;
     top: px;
+    padding: 2px;
     /* margin-bottom: 500px;
     margin-left: 200; */
-    border-color: tomato;
+    border-color: #800020;
+    background-color: goldenrod;
     border-width: 1.3rem;
     border-radius: 30px;
     font-family: fantasy;
@@ -65,10 +76,13 @@ audio{
 }
 
 #filmList{
+    appearance: none;
     position: absolute;
     top: 60px;
+    padding: 2px;
     margin-top: 15.5rem;
-    border-color: tomato;
+    border-color: #800020;
+    background-color: goldenrod;
     border-width: 1.3rem;
     border-radius: 30px;
     font-family: fantasy;
