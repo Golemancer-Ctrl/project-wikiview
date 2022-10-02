@@ -1,24 +1,44 @@
 let charactersApi = "https://hp-api.herokuapp.com/api/characters";
-let selectedCharacterIndex = localStorage.getItem("charIndex");
+let selectedCharacterIndex = JSON.parse(localStorage.getItem("charIndex"));
 
+let sigText = document.querySelector('#sigSpell');
+let sigSpells = ["Stupefy", "Muffliato", "Wordless Stupefy", "Expelliarmus", "Sectumsempra"];
 
+console.log(selectedCharacterIndex);
 
 function fetchApi() {
-  fetch(charactersApi)
+    fetch(charactersApi)
     .then(function (response) {
-      if (!response.ok) {
-        throw response.json();
-      }
-      return response.json();
+        if (!response.ok) {
+            throw response.json();
+        }
+        return response.json();
     })
     .then(function (charData) {
-      localStorage.setItem("charObject", charData[selectedCharacterIndex]);
+        console.log(charData[selectedCharacterIndex]);
+        localStorage.setItem("charObject", JSON.stringify(charData[selectedCharacterIndex]));
     })
 }
 
 fetchApi();
 
-let charInfo = localStorage.getItem("charObject");
+let charInfo = JSON.parse(localStorage.getItem("charObject"));
 
-console.log(charInfo);
+if (selectedCharacterIndex === 5) {
+    sigText.innerText = sigSpells[0];
+} else if (selectedCharacterIndex === 3) {
+    sigText.innerText = sigSpells[1];
+} else if (selectedCharacterIndex === 10) {
+    sigText.innerText = sigSpells[2];
+} else if (selectedCharacterIndex === 0) {
+    sigText.innerText = sigSpells[3];
+} else if (selectedCharacterIndex===7) {
+    sigText.innerText = sigSpells[4];
+}
 
+for(i=0; i < document.getElementsByClassName("name").length; i++) {
+    document.getElementsByClassName("name")[i].innerText = charInfo.name;
+}
+
+document.querySelector("#DOB").innerText = charInfo.dateOfBirth;
+document.querySelector("#house").innerText = charInfo.house;
