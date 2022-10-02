@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ 
+ <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,21 +15,15 @@
     />
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Homepage</title>
-  </head>
+</head>
 
-  <body class="wrapper">
-    <h1 class="container title is-1 is-spaced">PotterWiki</h1>
-    <h2 class="container subtitle is-2">A Wikipedia for Harry Potter Nerds</h2>
-<div class="maincontainer">
-    <div id="containerdiv">
-      <audio controls autoplay>
-        <source
-          src="https://www.televisiontunes.com/uploads/audio/Harry%20Potter%20-%20Main%20Theme.mp3"
-          type="audio/mp3"
-          alt="Harry Potter Main Theme"
-        />
-      </audio>
-    </div>
+<body class="wrapper">
+    <h1 class="container title is-1 is-spaced"> PotterWiki </h1>
+    <h2 class="container subtitle is-2"> A Wikipedia for Harry Potter Nerds </h2>
+    <div id="containerdiv"> <audio controls autoplay>
+        <source src="https://www.televisiontunes.com/uploads/audio/Harry%20Potter%20-%20Main%20Theme.mp3" type="audio/mp3" alt="Harry Potter Main Theme">
+    </audio>
+</div>
 
     <!-- search bar for future development -->
     <!-- <div class="container"> 
@@ -100,49 +95,33 @@
           </option>
         </select>
       </div>
+      
     <!-- add character dropdown here -->
-    <div id="containerdiv">
-      <select id="charList">
-        <option selected disabled>Choose a character</option>
-        <option
-          value="characterpage.html?name=Cedric"
-          data-index="5"
-          class="char"
-        >
-          Cedric Diggory
-        </option>
-        <option
-          value="characterpage.html?name=Draco"
-          data-index="3"
-          class="char"
-        >
-          Draco Malfoy
-        </option>
-        <option
-          value="characterpage.html?name=Luna"
-          data-index="10"
-          class="char"
-        >
-          Luna Lovegood
-        </option>
-        <option
-          value="characterpage.html?name=Harry"
-          data-index="0"
-          class="char"
-        >
-          Harry Potter
-        </option>
-        <option
-          value="characterpage.html?name=Severus"
-          data-index="7"
-          class="char"
-        >
-          Severus Snape
-        </option>
-      </select>
-    </div>
+<div id="containerdiv"> 
+    <select id="charList">
+        <option selected disabled>Character Selection</option>
+        <option value="characterpage.html?name=Cedric" data-index="5" class="char">Cedric Diggory</option>
+        <option value="characterpage.html?name=Draco" data-index="3" class="char">Draco Malfoy</option>
+        <option value="characterpage.html?name=Luna" data-index="10" class="char">Luna Lovegood</option>
+        <option value="characterpage.html?name=Harry" data-index="0" class="char">Harry Potter</option>
+        <option value="characterpage.html?name=Severus" data-index="7" class="char">Severus Snape</option>
+    </select>
+</div> 
+
     <!-- add movie dropdown here -->
-    
+    <div id="containerdiv">
+    <select id="filmList">
+        <option selected disabled>Streaming Availability</option>
+        <option class="film js-modal-trigger" data-movie="0" data-target="modal-film-display">Harry Potter and the Sorcerer's Stone</option>
+        <option class="film js-modal-trigger" data-movie="1" data-target="modal-film-display">Harry Potter and the Chamber of Secrets</option>
+        <option class="film js-modal-trigger" data-movie="2" data-target="modal-film-display">Harry Potter and the Prisoner of Azkaban</option>
+        <option class="film js-modal-trigger" data-movie="3" data-target="modal-film-display">Harry Potter and the Goblet of Fire</option>
+        <option class="film js-modal-trigger" data-movie="4" data-target="modal-film-display">Harry Potter and the Order of the Phoenix</option>
+        <option class="film js-modal-trigger" data-movie="5" data-target="modal-film-display">Harry Potter and the Half-Blood Prince</option>
+        <option class="film js-modal-trigger" data-movie="6" data-target="modal-film-display">Harry Potter and the Deathly Hallows Part 1</option>
+        <option class="film  js-modal-trigger" data-movie="7" data-target="modal-film-display">Harry Potter and the Deathly Hallows Part 2</option>
+    </select> 
+
 </div>
 
     <div id="modal-film-display" class="modal">

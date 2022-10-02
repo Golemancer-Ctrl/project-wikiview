@@ -11,22 +11,28 @@
     <title></title> <!-- name page based on selected character -->
 </head>
 <body>
+    <header>
+        <h1 class="name"></h1> <!-- character name -->
+        <button id="return"> Return </button> <!-- button to return to the homepage -->
+    </header>
+
+    <main>
+
+        <img src="" />
+
+        <p>Date of Birth: <span id="DOB"></span></p>
+
+        <p>Wizarding House: <span id="house"></span></p> <!-- wizarding house, assign id to match -->
     
-    <button> Return </button> <!-- button to return to the homepage -->
+        <p>Signature Spell: <span id="sigSpell"></span></p> <!-- use array to manually fill this depending on the character -->
     
-    <img src=""> <!-- change image source depending on character -->
+        <p>
+            <q id="quote"></q>
+            <div id="cite"></div><!-- character name -->
+        </p>
+
+    </main>
     
-    <h1></h1> <!-- character name -->
-    
-    <p></p> <!-- wizarding house, assign id to match -->
-    
-    <p id="sigSpell"></p> <!-- use array to manually fill this depending on the character -->
-    
-    <p id="quote">
-        <!-- pull from either wizard world or harry potter api -->
-        <q></q>
-        <cite></cite> <!-- character name -->
-    </p>
     <script src="./assets/characterpage.js"></script>
 </body>
 </html>
