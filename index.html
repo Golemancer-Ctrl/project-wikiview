@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
+ 
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Homepage</title>
 </head>
 
@@ -18,7 +25,6 @@
     </audio>
 </div>
 
-
     <!-- search bar for future development -->
     <!-- <div class="container"> 
         <form action="" class="container search-bar">
@@ -26,7 +32,70 @@
             <button type="submit"><img src="./assets/images/search.png"></button>
         </form>
     </div> -->
-    
+    <div id="containerdiv">
+        <select id="filmList">
+          <option selected disabled>
+            Harry Potter streaming options, pick a movie
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="0"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Sorcerer's Stone
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="1"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Chamber of Secrets
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="2"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Prisoner of Azkaban
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="3"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Goblet of Fire
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="4"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Order of the Phoenix
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="5"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Half-Blood Prince
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="6"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Deathly Hallows Part 1
+          </option>
+          <option
+            class="film js-modal-trigger"
+            data-movie="7"
+            data-target="modal-film-display"
+          >
+            Harry Potter and the Deathly Hallows Part 2
+          </option>
+        </select>
+      </div>
+      
     <!-- add character dropdown here -->
 <div id="containerdiv"> 
     <select id="charList">
@@ -38,6 +107,7 @@
         <option value="characterpage.html?name=Severus" data-index="7" class="char">Severus Snape</option>
     </select>
 </div> 
+
     <!-- add movie dropdown here -->
     <div id="containerdiv">
     <select id="filmList">
@@ -51,22 +121,21 @@
         <option class="film js-modal-trigger" data-movie="6" data-target="modal-film-display">Harry Potter and the Deathly Hallows Part 1</option>
         <option class="film  js-modal-trigger" data-movie="7" data-target="modal-film-display">Harry Potter and the Deathly Hallows Part 2</option>
     </select> 
+
 </div>
 
     <div id="modal-film-display" class="modal">
-        <div class="modal-background"></div>
-      
-        <div class="modal-content">
-          
-            <h1 id="modalHeader">Streaming Now On:</h1>
-            <p id="filmDisplay"></p>
-            <!-- streaming availability displayed here -->
-          
-        </div>
-      
-        <button class="modal-close is-large" aria-label="close"></button>
+      <div class="modal-background"></div>
+
+      <div class="modal-content">
+        <h1 id="modalHeader">Streaming Now On:</h1>
+        <p id="filmDisplay"></p>
+        <!-- streaming availability displayed here -->
       </div>
-    
+
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
     <script src="./assets/homepage.js"></script>
-</body>
+  </body>
 </html>
