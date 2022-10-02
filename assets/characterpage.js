@@ -5,10 +5,10 @@ let sigText = document.querySelector('#sigSpell');
 let sigSpells = ["Stupefy", "Muffliato", "Wordless Stupefy", "Expelliarmus", "Sectumsempra"];
 let charQuotes = [
     "I realize I never really thanked you properly for tipping me off about those dragons.",
-    "I’ve interrupted a deep thought, haven’t I? I can see it growing smaller in your eyes...",
     "Honestly, if you were any slower, you’d be going backwards.",
+    "I’ve interrupted a deep thought, haven’t I? I can see it growing smaller in your eyes...",
     "I don't go looking for trouble. Trouble usually finds me.",
-    "I can teach you how to bottle fame, brew glory, even stopper death… If you aren’t as big a bunch Of dunderheads as I usually have to teach."
+    "I can teach you how to bottle fame, brew glory, even stopper death… If you aren’t as big a bunch of dunderheads as I usually have to teach."
 ]
 
 console.log(selectedCharacterIndex);
@@ -51,6 +51,12 @@ if (selectedCharacterIndex === 5) {
 
 document.querySelector("img").setAttribute("src", charInfo.image);
 document.querySelector("h1").innerText = charInfo.name;
-document.querySelector("#DOB").innerText = charInfo.dateOfBirth;
+
+if(selectedCharacterIndex === 5){
+    document.querySelector("#DOB").innerText = "1977";
+} else {
+    document.querySelector("#DOB").innerText = charInfo.dateOfBirth;
+}
+
 document.querySelector("#house").innerText = charInfo.house;
 document.querySelector("#cite").innerText = "- " + charInfo.name;
