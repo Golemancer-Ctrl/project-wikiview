@@ -24,9 +24,10 @@ window.onload = function () {
   }
 };
 
-document.getElementById('return').addEventListener("click", function (clear) {
-  localStorage.clear()
-  });
+// removed due to potential bug source, problem resolved with refresh onload
+// document.getElementById('return').addEventListener("click", function (clear) {
+//   localStorage.clear()
+//   });
 
 function fetchApi() {
   fetch(charactersApi)
