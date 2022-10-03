@@ -6,12 +6,59 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+audio {
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 12rem;
+}
+
+img {
+  object-fit: fill;
+  max-height: 60%;
+  max-width: 20%;
+  height: 60%;
+  width: 20%;
+  border: 5px solid white;
+  margin-bottom: 2rem;
+}
+
+main {
+  text-align: center;
+}
+
 .title {
   color: #800020;
 }
 
 .subtitle {
   color: goldenrod;
+}
+
+.name {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background: url("./images/hg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -ms-content-zooming: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #modalHeader {
@@ -38,38 +85,28 @@
 
 #cedric {
   background: #800020;
+  color: yellow;
+
 }
 
 #draco {
   background: #1a472a;
+  color: silver;
 }
 
 #luna {
   background: #0e1a40;
+  color: tan;
 }
 
 #harry {
   background: #800020;
+  color: yellow;
 }
 
 #severus {
   background: #1a472a;
-}
-
-.name {
-  text-align: center;
-  font-size: xx-large;
-}
-
-main {
-  text-align: center;
-}
-
-.container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: silver;
 }
 
 #containerdiv {
@@ -81,21 +118,15 @@ main {
   width: 100%;
 }
 
-audio {
-  width: 300px;
-  text-align: center;
-  position: absolute;
-  top: 12rem;
-}
-
 #charList {
   appearance: none;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 70%;
-  padding: 2px;
+  padding: 1rem;
   border-color: #800020;
   background-color: goldenrod;
   border-width: 1.3rem;
@@ -108,11 +139,12 @@ audio {
 #filmList {
   appearance: none;
   display: flex;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 70%;
-  padding: 2px;
+  padding: 1rem;
   margin-top: 15.5rem;
   border-color: #800020;
   background-color: goldenrod;
@@ -123,8 +155,22 @@ audio {
   font-weight: 600;
 }
 
+#return {
+  text-align: center;
+  background-color: purple;
+  padding: 1rem;
+  color: white;
+  font-size: large;
+  border: 2px solid white;
+  margin-left: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 /* for future development */
-.search-bar {
+/* .search-bar {
   width: 100%;
   max-width: 700px;
   background: rgba(255, 255, 255, 0);
@@ -143,9 +189,9 @@ audio {
   padding: 24px 20px;
   font-size: 20px;
   color: #cac7ff;
-}
+} */
 
-::placeholder {
+/* ::placeholder {
   color: #cac7ff;
 }
 
@@ -160,21 +206,7 @@ audio {
   height: 60px;
   background: #58629b;
   cursor: pointer;
-}
-
-.wrapper {
-  background: url("./images/hg-desktop.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  -ms-content-zooming: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
+} */
 
 @media screen and (max-width: 480px) {
   html {
@@ -190,6 +222,14 @@ audio {
     width: 100%;
     height: 100%;
   }
+
+  img {
+    max-height: 80%;
+    max-width: 40%;
+    height: 100%;
+    width: 100%;
+  }
+
   #filmList {
     width: 85%;
     font-size: unset;
@@ -198,4 +238,5 @@ audio {
   #charList {
     font-size: unset;
   }
+
 }
