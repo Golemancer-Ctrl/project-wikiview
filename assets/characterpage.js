@@ -24,11 +24,6 @@ window.onload = function () {
   }
 };
 
-// removed due to potential bug source, problem resolved with refresh onload
-// document.getElementById('return').addEventListener("click", function (clear) {
-//   localStorage.clear()
-//   });
-
 function fetchApi() {
   fetch(charactersApi)
     .then(function (response) {
@@ -50,26 +45,31 @@ fetchApi();
 
 let charInfo = JSON.parse(localStorage.getItem("charObject"));
 let quote = document.getElementById("quote");
-let element = document.getElementById("infoStyle");
+let bgStyle = document.getElementsByClassName("infoStyle");
 
 if (selectedCharacterIndex === 5) {
-  element.id = "cedric";
+  bgStyle[0].id = "cedric";
+  bgStyle[1].id = "cedric";
   sigText.innerText = sigSpells[0];
   quote.innerText = charQuotes[0];
 } else if (selectedCharacterIndex === 3) {
-  element.id = "draco";
+  bgStyle[0].id = "draco";
+  bgStyle[1].id = "draco";
   sigText.innerText = sigSpells[1];
   quote.innerText = charQuotes[1];
 } else if (selectedCharacterIndex === 10) {
-  element.id = "luna";
+  bgStyle[0].id = "luna";
+  bgStyle[1].id = "luna";
   sigText.innerText = sigSpells[2];
   quote.innerText = charQuotes[2];
 } else if (selectedCharacterIndex === 0) {
-  element.id = "harry";
+  bgStyle[0].id = "harry";
+  bgStyle[1].id = "harry";
   sigText.innerText = sigSpells[3];
   quote.innerText = charQuotes[3];
 } else if (selectedCharacterIndex === 7) {
-  element.id = "severus";
+  bgStyle[0].id = "severus";
+  bgStyle[1].id = "severus";
   sigText.innerText = sigSpells[4];
   quote.innerText = charQuotes[4];
 }
