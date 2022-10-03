@@ -14,7 +14,7 @@ You can find a live version of our site at: [https://golemancer-ctrl.github.io/p
 ## Credits
 
 Creators:
-- Anthony Hoffman
+- Anthony Hoffman - @aHoff6
 - Luana Paredes
 - Kiseri Habte
 - Eric Marcy
