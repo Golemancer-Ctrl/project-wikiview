@@ -24,7 +24,9 @@ window.onload = function () {
   }
 };
 
-console.log(selectedCharacterIndex);
+document.getElementById('return').addEventListener("click", function (clear) {
+  localStorage.clear()
+  });
 
 function fetchApi() {
   fetch(charactersApi)
