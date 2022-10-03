@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title></title> <!-- name page based on selected character -->
 </head>
-<body>
+
+<body id="infoStyle">
     <header>
         <h1 class="name"></h1> <!-- character name -->
         <button id="return" onclick="history.back()"> Return </button> <!-- button to return to the homepage -->
@@ -23,16 +24,18 @@
         <p>Date of Birth: <span id="DOB"></span></p>
 
         <p>Wizarding House: <span id="house"></span></p> <!-- wizarding house, assign id to match -->
-    
-        <p>Signature Spell: <span id="sigSpell"></span></p> <!-- use array to manually fill this depending on the character -->
-    
+
+        <p>Signature Spell: <span id="sigSpell"></span></p>
+        <!-- use array to manually fill this depending on the character -->
+
         <p>
             <q id="quote"></q>
-            <div id="cite"></div><!-- character name -->
+        <div id="cite"></div><!-- character name -->
         </p>
 
     </main>
-    
+
     <script src="./assets/characterpage.js"></script>
 </body>
+
 </html>

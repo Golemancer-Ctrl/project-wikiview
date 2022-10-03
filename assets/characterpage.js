@@ -26,8 +26,6 @@ window.onload = function () {
 
 console.log(selectedCharacterIndex);
 
-
-
 function fetchApi() {
   fetch(charactersApi)
     .then(function (response) {
@@ -49,20 +47,26 @@ fetchApi();
 
 let charInfo = JSON.parse(localStorage.getItem("charObject"));
 let quote = document.getElementById("quote");
+let element = document.getElementById("infoStyle");
 
 if (selectedCharacterIndex === 5) {
+  element.id = "cedric";
   sigText.innerText = sigSpells[0];
   quote.innerText = charQuotes[0];
 } else if (selectedCharacterIndex === 3) {
+  element.id = "draco";
   sigText.innerText = sigSpells[1];
   quote.innerText = charQuotes[1];
 } else if (selectedCharacterIndex === 10) {
+  element.id = "luna";
   sigText.innerText = sigSpells[2];
   quote.innerText = charQuotes[2];
 } else if (selectedCharacterIndex === 0) {
+  element.id = "harry";
   sigText.innerText = sigSpells[3];
   quote.innerText = charQuotes[3];
 } else if (selectedCharacterIndex === 7) {
+  element.id = "severus";
   sigText.innerText = sigSpells[4];
   quote.innerText = charQuotes[4];
 }
